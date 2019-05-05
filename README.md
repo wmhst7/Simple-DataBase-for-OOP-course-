@@ -1,11 +1,11 @@
-#说明文档
-##1. 数据库整体结构
+# 说明文档
+## 1. 数据库整体结构
 
-**数据库的层级结构：**ALLBASES -> DATABASE -> TABLE -> COLUMN -> DATA
+** 数据库的层级结构： ** ALLBASES -> DATABASE -> TABLE -> COLUMN -> DATA
 
 * 其中DATA为基类，并实现了INT，CHAR，DOUBLE三种派生类用于存储数据。
 
-##2. 数据库各个类的基本数据与封装
+## 2. 数据库各个类的基本数据与封装
 * 基本数据的定义
 ```
     enum ConstraintType{//列的约束类型枚举
@@ -77,7 +77,7 @@
         std::map<std::string,DATABASE*> AllBasesMap; //数据库名->数据库指针
     };
 ```
-##3. 数据库各个类的主要接口
+## 3. 数据库各个类的主要接口
 +  DATA类
 ```
     bool isNull();//获取NullFlag
@@ -194,7 +194,7 @@ DOUBLE类新增成员函数:
     void show();//按字典序列出当前数据库
 ```
 
-##4. 开发者指导
+## 4. 开发者指导
 
 建议不要选择本组的代码继续开发。
 
