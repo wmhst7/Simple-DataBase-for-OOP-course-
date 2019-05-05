@@ -1,7 +1,7 @@
 # 说明文档
 ## 1. 数据库整体结构
 
-** 数据库的层级结构： ** ALLBASES -> DATABASE -> TABLE -> COLUMN -> DATA
+**数据库的层级结构: ALLBASES -> DATABASE -> TABLE -> COLUMN -> DATA**
 
 * 其中DATA为基类，并实现了INT，CHAR，DOUBLE三种派生类用于存储数据。
 
